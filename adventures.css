@@ -1,112 +1,116 @@
-* {box-sizing: border-box}
 
-.grid{
+#content{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 75px auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, minmax(150px, auto));
   grid-gap: 20px;
   grid-auto-rows: 25px;
 }
+#content div{
+  background: #3bbced;
+  padding: 30px;
+}
+
+#content div:nth-child(even){
+  background: #777;
+}
 
 .header{
+  grid-column: 1 / 7;
   background-color:#0099ff;
   text-align:left;
   padding:10px;
 }
 
 .topnav{
+  grid-column: 2 /7;
+  grid-row: 
   overflow: hidden;
   background-color:#9966ff;
 }
 
 .sidebar{
-  background-color:#ff0000;
-  padding:10px;
+  grid-column: 1;
+  grid-row: 2 / 5;
+  background-color: navy;
+  padding: 30px;
 }
 
+.section1{
+  grid-column: 2;
+  grid-row: 3;
+  background-color: pink;
+  padding: 10px;
+}
+
+.section2{
+  grid-column: 3;
+  grid-row: 3;
+  background-color: aqua;
+  padding: 30px;
+}
+
+.section3{
+  grid-column: 4;
+  grid-row: 3;
+  background-color:
+  padding:
+}
+
+.section4{
+  grid-column: 5;
+  grid-row: 3;
+  background-color:
+  padding:
+}
+
+.section5{
+  grid-column: 6;
+  grid-row: 3;
+  background-color:
+  padding:
+}
+
+.section6{
+  grid-column: 2;
+  grid-row: 4;
+  background-color:
+  padding:
+}
+
+.section7{
+  grid-column: 3;
+  grid-row: 4;
+  background-color:
+  padding:
+}
+
+.section8{
+  grid-column: 4;
+  grid-row: 4;
+  background-color:
+  padding:
+}
+
+.section9{
+  grid-column: 5;
+  grid-row: 4;
+  background-color:
+  padding:
+}
+
+.section10{
+  grid-column: 6;
+  grid-row: 4;
+  background-color:
+  padding:
+}
+
+/* footer content will include the flags of all the states and countries we have visited. Flags will be animated to ripple in the wind. */
 .footer{
+  grid-column: 1 / 7;
+  grid-row: 5;
   background-color:#ffff00;
   padding:10px;
 }
 
-
-
-
-/*
-body {
-    background: #1D1F20;
-    text-align: center;
-    padding: 40px;
-    font-family: 'Open Sans', sans-serif; Arial
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 14;
-    text color: #ffffff;
-  }
-
-ul {
-    list-style-type: none;
-    margin: 20px 20px 50px 0;;
-    margin-right: 20px;
-    padding: 10px;
-    padding-right: 20px;
-    overflow: hidden;
-    background-color: #333;
-}
-a:link {
-    color: rgb(7, 204, 7);
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: rgb(13, 151, 231);
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-  a:visited {
-    color: rgb(85, 82, 82);
-    background-color: transparent;
-    text-decoration: none;
-  }
- 
-  .container{
-    display:grid;
-    grid-template-columns: 
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1em;
-    grid-auto-rows:minmax(100, auto);
-
-  }
- 
-
-
-/*
-  .hamburger {
-      position: relative;
-      display: inline-block;
-      width: 1.25em;
-      height: 0.8em;
-      margin-right: 0.3em;
-      border-top: 0.2em solid #fff;
-      border-bottom: 0.2em solid #fff;
-  }
-  
-  .hamburger:before {
-      content: "";
-      position: absolute;
-      top: 0.3em;
-      left: 0px;
-      width: 100%;
-      border-top: 0.2em solid #fff;
-  } */
-  
- 
